@@ -1,0 +1,39 @@
+<section class="iq-blog-section light-gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+               <div class="iq-masonry-block ">
+                    <div class="owl-carousel owl-loaded owl-drag" data-dots="true" data-nav="true" data-items="3" data-items-laptop="3" data-items-tab="2" data-items-mobile="1" data-items-mobile-sm="1" data-autoplay="true" data-loop="true" data-margin="30">
+                        <div *ngFor="let list of List" class="iq-masonry-item">
+                            <div class="iq-portfolio">
+                                <a href="#" class="iq-portfolio-img">
+                                    <img src="{{ list.image }}" class="img-fluid" alt="qloud-portfolio"/>
+                                    <div class="portfolio-link">
+                                        <div class="icon">
+                                            <i class="fa fa-link" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="iq-portfolio-content">
+                                    <div class="details-box clearfix">
+                                        <div class="consult-details">
+                                            <a href="#">
+                                                <h5 class="link-color">{{ list.title }}</h5>
+                                                <p class="mb-0 iq-portfolio-desc">{{ list.desc }}</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

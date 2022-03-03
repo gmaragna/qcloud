@@ -1,0 +1,19 @@
+<!-- Header component start-->
+<app-header [logoImg]="logoImage" [navItemList]="navItems"></app-header>
+<!-- Header component end-->
+<!-- Breadcrumb Start -->
+<app-top-banner [data]="data"></app-top-banner>
+<!-- Breadcrumb End -->
+<!-- Blog Start -->
+<section class="iq-blog-section iq-pb-55">
+    <div class="container">
+        <div class="row">
+            <div class="iq-blog text-left ">
+                <app-blog-card  [lg]="4" [md]="4" [blogList]="List"></app-blog-card>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer start -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
+<!-- Footer end -->

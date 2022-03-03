@@ -1,0 +1,26 @@
+<section class="blue-bg iq-analytics-clients">
+    <img src="./assets/images/others/shape1.png" class="img-fluid shape-right" alt="QLOUD">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-12 align-self-center mb-4 mb-lg-0">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+                <div class="iq-btn-container">
+                    <a class="iq-button d-inline" href="#">Get Started</a>
+                </div>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+                <div class=" text-left iq-title-box iq-title-white iq-title-box-2">
+                    <div class="iq-title-icon"></div>
+                    <h6 class="iq-title ml-lg-5">Transforming the design process At</h6>
+                </div>
+                <div class="iq-client iq-client-style-1 ">
+                    <ul class="iq-client-col-4 iq-client-grid">
+                        <li *ngFor="let list of Images">
+                            <img src="{{ list.image }}" class="img-fluid" alt="client-img">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

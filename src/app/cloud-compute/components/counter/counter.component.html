@@ -1,0 +1,18 @@
+<section class="iq-compute-counter">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let list of List" class="col-lg-3 col-md-6 col-sm-12">
+                <div class="iq-counter text-center iq-counter-style-1 iq-color">
+                    <div class="counter-content">
+                        <p class="iq-counter-info">
+                            <span class="timer" [attr.data-to]="[list.value]" data-speed="5000">{{ list.value }}</span>
+                            <span class="counter-after-content"></span>
+                            <span class="counter-symbol">{{ list.symbol }}</span>
+                        </p>
+                        <h6 class="counter-title-text">{{ list.title }}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

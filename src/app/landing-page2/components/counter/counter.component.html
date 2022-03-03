@@ -1,0 +1,19 @@
+<section class="gray-bg iq-ptb-60">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let list of List" class="col-lg-3 col-md-6 col-sm-12">
+                <div class="iq-counter text-center iq-counter-style-2">
+                    <div class="counter-content">
+                        <div class="counter-title-text">{{ list.title }} </div>
+                        <p class="iq-counter-info">
+                            <span class="timer" [attr.data-to]="list.timer" data-speed="5000">{{list.timer}}</span>
+                            <span class="counter-after-content"></span>
+                            <span class="counter-symbol"></span>
+                        </p>
+                        <p class="counter-content-text">{{ list.content }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

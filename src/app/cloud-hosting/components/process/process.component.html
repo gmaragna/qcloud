@@ -1,0 +1,29 @@
+<section class="pt-0 iq-pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 wow fadeInUp">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div  *ngFor="let list of List;let i = index" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="0.2s">
+                <div class="iq-process iq-process-step-style-3 text-center">
+                    <div class="iq-process-step">
+                        <div class="iq-step-content">
+                            <div class="step-number">
+                                <span>{{ i+1 }}</span>
+                                <div class="step_icon">
+                                    <img class="hover-img img-fluid" src="{{ list.image }}" alt="fancybox">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="iq-step-text-area">
+                            <h4 class="iq-step-title">{{ list.title }}</h4>
+                            <span class="iq-step-desc">{{ list.desc }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

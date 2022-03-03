@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Bootstrap import */
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+
+/* Qloud custom */
+@import "assets/css/qloud-style.css";
+
+/* Slick Theme */
+@import "assets/css/slick-theme.css";
+
+@import "assets/css/slick.css";
+
+/* Owl  Carousel*/
+@import "assets/css/owl.carousel.min.css";

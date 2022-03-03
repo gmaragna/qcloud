@@ -1,0 +1,43 @@
+<section class="pt-0">
+    <img src="./assets/images/others/shape1.png" class="img-fluid shape-left" alt="QLOUD">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="iq-slider-with-text text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="slider slider-nav center">
+                                    <li *ngFor="let slider of Sliders" class="iq-slider-nav">
+                                        <img src="{{ slider.image }}" class="img-fluid" title="{{ slider.id }}" alt="QLOUD" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="slider slider-for center">
+                                    <div *ngFor="let slider of Sliders" class="slider-text">
+                                        <h4 class="slider-title">{{ slider.title }}</h4>
+                                        <p class="slider-desc">{{ slider.desc }}</p>
+                                        <div class="iq-btn-container">
+                                            <a href="{{ slider.link }}" class="iq-button iq-btn-link has-icon btn-icon-right" style="color:#007BFC;">
+                                                Read More<i aria-hidden="true" class="ion ion-ios-arrow-forward"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

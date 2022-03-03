@@ -1,0 +1,18 @@
+<section class="pt-0 wow fadeInUp iq-pb-70" data-wow-duration="0.6s">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let list of List" class="col-lg-3 col-md-6 col-sm-12 ">
+                <div class="iq-icon-box iq-icon-box-style-4   text-left">
+                    <div class="icon-box-img">
+                        <img src="{{ list.image }}" class="img-fluid" alt="01.png">
+                    </div>
+                    <div class="icon-box-content">
+                        <h5 class="icon-box-title"><a href="#">{{ list.title }}</a></h5>
+                        <p class="icon-box-desc">{{ list.desc }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        

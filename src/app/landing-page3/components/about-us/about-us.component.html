@@ -1,0 +1,19 @@
+<section>
+    <img src="./assets/images/others/shape1.png" class="img-fluid shape-right" alt="QLOUD">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 mb-lg-0 mb-5">
+                <img src="assets/images/others/01.png" class="img-fluid" alt="qloud">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+
+                <div class="iq-list iq-two-column">
+                    <ul class="iq-list-with-icon">
+                        <li *ngFor="let support of supports"><i class="ion ion-checkmark-round"></i>{{ support.title }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

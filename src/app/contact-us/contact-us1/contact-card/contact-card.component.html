@@ -1,0 +1,17 @@
+<section class="light-gray-bg">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let list of List " class="col-lg-4  col-md-6">
+                <div class="iq-process iq-process-step-style-2 text-center">
+                    <div class="iq-process-step">
+                        <div class="iq-step-content"><i aria-hidden="true" class="{{ list.icon }}"></i> </div>
+                        <div class="iq-step-text-area">
+                            <h4 class="iq-step-title">{{ list.title }}</h4>
+                            <span class="iq-step-desc">{{ list.desc }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

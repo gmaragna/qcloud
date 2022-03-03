@@ -1,0 +1,29 @@
+<!-- Header component start-->
+<app-header [logoImg]="logoImage" [navItemList]="navItems"></app-header>
+<!-- Header component end-->
+<!-- Breadcrumb Start -->
+<app-top-banner [data]="data"></app-top-banner>
+<!-- Breadcrumb End -->
+<!-- Blog Start -->
+<div class="iq-blog-section overview-block-ptb iq-pb-55">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 mt-lg-0 mt-5">
+                <app-blog-card [lg]="12" [md]="12" [blogList]="List"></app-blog-card>
+            </div>
+            <div class="col-lg-4 col-sm-12 mt-lg-0 mt-5">
+                <div id="secondary" class="widget-area">
+                    <app-blog-search></app-blog-search>
+                    <app-blog-recent-post></app-blog-recent-post>
+                    <app-blog-recent-comment></app-blog-recent-comment>
+                    <app-blog-archive></app-blog-archive>
+                    <app-blog-category></app-blog-category>
+                    <app-blog-meta></app-blog-meta>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer start -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
+<!-- Footer end -->

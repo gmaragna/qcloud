@@ -1,0 +1,32 @@
+<section class="light-gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-sm-12 align-self-center mb-4 mb-lg-0">
+                <div class="iq-testimonial text-center iq-testimonial-3">
+                    <div class="owl-carousel" data-dots="false" data-nav="false" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-autoplay="true" data-loop="true" data-margin="60" >
+                        <div *ngFor="let list of List" class="iq-testimonial-info">
+                            <div class="iq-testimonial-content">
+                                <p>{{ list.desc }}</p>
+                            </div>
+                            <div class="iq-testimonial-member">
+                                <div class="avtar-name">
+                                    <div class="iq-lead">{{ list.name }}</div>
+                                    <span class="iq-post-meta">{{ list.design }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="col-lg-5 col-sm-12">
+             <div class="about-analytics">
+                <img src="./assets/images/client/c4.png" class="attachment-large img-fluid size-large" alt="client" >
+                <h4 class="mb-3">About Qloud</h4>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. </p>
+                <h5 class="mb-3 mt-3">Industries : <span>Retail &amp; Consumer Goods</span></h5>
+                <h5>Location : <span>United Kingdom</span></h5>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>

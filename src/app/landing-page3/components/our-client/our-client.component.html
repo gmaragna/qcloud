@@ -1,0 +1,27 @@
+<section class="iq-client-section pt-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-sm-12 align-self-center">
+                <div class="iq-client iq-client-style-1  iq-has-shadow iq-has-grascale">
+                    <ul class="iq-client-col-3 iq-client-grid">
+                        <li *ngFor="let image of Images">
+                            <img src="{{ image.image }}" class="img-fluid" alt="client-img" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 align-self-center mt-5 mt-lg-0">
+                <div class="client-box">
+                    <div class=" text-left iq-title-box iq-title-white iq-title-box-1">
+                        <div class="iq-title-icon"></div>
+                        <span class="iq-subtitle">Our Clients</span>
+                        <h4 class="iq-title">We have the<br> Privilege of working<br> with exceptional<br> customers.</h4>
+                    </div>
+                    <div class="iq-btn-container">
+                        <a class="iq-button iq-btn-round d-inline" href="javascript:void(0)"> View More </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

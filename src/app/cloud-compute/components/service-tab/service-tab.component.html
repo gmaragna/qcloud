@@ -1,0 +1,54 @@
+<section class="light-gray-bg iq-sahpe">
+    <img src="./assets/images/others/shape1.png" class="img-fluid shape-right" alt="QLOUD">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="iq-tabs iq-tab-vertical iq-hosting">
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li *ngFor="let list of List" class="nav-item">
+                                    <a class="nav-link {{ list.active !== undefined && list.active ? 'active' : 'test' }}" data-toggle="pill" href="{{ '#' + list.id}}" role="tab">
+                                        <div class="media"><i aria-hidden="true" class="{{ list.icon }}"></i>
+                                            <div class="media-body">
+                                                <h6 class="tab-title">{{ list.title }}</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="tab-content">
+                                <div *ngFor="let list of List" class="tab-pane {{ list.active !== undefined && list.active ? 'active' : 'test' }}" id="{{list.id}}" role="tabpanel">
+                                    <div *ngIf="list.image">
+                                        <div  class="ml-lg-5">
+                                            <img src="{{ list.image }}" class="img-fluid" alt="img">
+                                            <h4 class="mb-3">{{list.sub_title}}</h4>
+                                            <p>{{ list.desc }}</p>
+                                        </div>
+                                    </div>
+                                    <div *ngIf="list.services">
+                                        <h4 class="mb-3">{{list.sub_title}}</h4>
+                                        <p>{{ list.desc }}</p>
+                                        <div class="iq-list iq-two-column mb-4">
+                                            <ul class="iq-list-with-icon">
+                                                <li *ngFor="let service of list.services"><i class="ion ion-checkmark-round main-color"></i>{{ service.title }}</li>
+                                            </ul>
+                                        </div>
+                                        <a class="iq-button iq-btn-medium iq-btn-round iq-btn-flat" [routerLink]="[list.link]" >Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

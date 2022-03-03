@@ -1,0 +1,26 @@
+<section class="pt-0 iq-pb-70 iq-data-product">
+    <img src="./assets/images/others/shape1.png" class="img-fluid shape" alt="QLOUD">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <app-title-section [titleSectionProp]="titleSectionProp"></app-title-section>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let list of List" class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="iq-icon-box iq-icon-box-style-4 text-center iq-box-shadow">
+                    <div class="icon-box-img">
+                        <img src="{{ list.image }}" class="img-fluid" alt="qloud">
+                    </div>
+                    <div class="icon-box-content">
+                        <h5 class="icon-box-title"><a href="#">{{ list.title }}</a></h5>
+                        <p class="icon-box-desc">{{ list.desc }}</p>
+                        <div class="iq-btn-container">
+                            <a class="iq-button iq-btn-link has-icon btn-icon-right d-inline" [routerLink]="[list.link]">Read More<i aria-hidden="true" class="ion ion-ios-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

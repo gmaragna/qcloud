@@ -1,0 +1,30 @@
+<!-- Header component start-->
+<app-header [logoImg]="logoImage" [navItemList]="navItems"></app-header>
+<!-- Header component end-->
+<!-- Breadcrumb Start -->
+<app-top-banner [data]="data"></app-top-banner>
+<!-- Breadcrumb End -->
+<!-- Portfolio Start -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="iq-masonry-block w-100 ">
+                    <div class="isotope-filters isotope-tooltip">
+                        <button data-filter="" class="active">All<span class="post_no"></span></button>
+                        <button data-filter=".creative">Creative<span class="post_no"></span></button>
+                        <button data-filter=".design">Design<span class="post_no"></span></button>
+                        <button data-filter=".print-branding">Print — Branding<span class="post_no"></span></button>
+                        <button data-filter=".html-ecommerce">Html — eCommerce<span class="post_no"></span></button>
+                    </div>
+                    <div class=" iq-masonry iq-columns-3">
+                        <app-portfolio-box [List]="List"></app-portfolio-box>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Portfolio End -->
+
+<!-- Footer start -->
+<app-footer [logoImg]="logoImage" [contactInfo]="contactInfo"></app-footer>
+<!-- Footer end -->
